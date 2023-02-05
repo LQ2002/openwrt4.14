@@ -76,6 +76,24 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
+           ./scripts/feeds install libpcre
+           ./scripts/feeds install libcap
+           ./scripts/feeds install jansson
+           ./scripts/feeds install libaudit
+           ./scripts/feeds install kmod-fs-exfat
+           ./scripts/feeds install kmod-leds-uleds
+           ./scripts/feeds install lua5.3
+           ./scripts/feeds install more
+           ./scripts/feeds install liblua5.3
+           ./scripts/feeds install musl-fts
+           ./scripts/feeds install python
+           ./scripts/feeds install kmod-shortcut-fe-drv
+           ./scripts/feeds install wol
+           ./scripts/feeds install libselinux
+           ./scripts/feeds install libbpf
+           ./scripts/feeds install libfdt
+           ./scripts/feeds install pcre
+           ./scripts/feeds install ca-certs
 
     - name: Load custom configuration
       run: |
